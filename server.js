@@ -3,7 +3,7 @@ const mcurl = "mongodb+srv://srinivasaraobagam:9182189245@cluster0.1wfoe.mongodb
 mongoose.connect(mcurl)
 .then(res=>console.log("Connected")).catch(err=>console.log("not connected check devoloper"));
 var Student =require('./model/Students.model');
-Student.find({}).then(res=>console.log(res)).catch(err=>console.log(err));
+// Student.find({}).then(res=>console.log(res)).catch(err=>console.log(err));
 // var newStd = new Student({name: 'Farooq sk',gender: 'male',age: 35,weight: 70})
 // console.log(newStd);newStd.save();
 
@@ -19,3 +19,6 @@ Student.find({}).then(res=>console.log(res)).catch(err=>console.log(err));
 // Student.findByIdAndDelete( '6752d1fe6830a543fb8ad40c')
 // .then(res=>console.log(res)).catch(err=>console.log(err));
 
+// var newStd=new Student({name: 'Karthik.v', gender: 'male', age: 24, weight: 70,})
+// console.log(newStd);newStd.save();
+// .then(res=>console.log(res)).catch(err=>console.log(err));
